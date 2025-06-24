@@ -7,7 +7,7 @@ import path, { dirname } from 'path';
 import mime from 'mime-types'; // Optional helper package
 
 // console.log()
-checkConnection();
+// checkConnection();
 // downloadAttachment().then((filePath) => {
 //     console.log(filePath)
 // })
@@ -54,18 +54,18 @@ async function checkConnection() {
 
 
 
-// async function getToken() {
-//     const auth = new google.auth.GoogleAuth({
-//         keyFile: "./ascendant-chain-417206-8ed69bb283f0.json",
-//         scopes: "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
-//     });
+async function getToken() {
+    const auth = new google.auth.GoogleAuth({
+        keyFile: "./ascendant-chain-417206-8ed69bb283f0.json",
+        scopes: "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
+    });
 
-//     return await auth.getAccessToken().then(
-//         (token) => {
-//             return token;
-//         }
-//     ).catch((err) => console.log("err...", err));
-// }
+    return await auth.getAccessToken().then(
+        (token) => {
+            return token;
+        }
+    ).catch((err) => console.log("err...", err));
+}
 
 async function downloadAttachment(): Promise<string> {
 
