@@ -1,0 +1,18 @@
+{
+  "name": "upload-snow-to-gcp",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/storage": "^7.16.0",
+    "axios": "^1.10.0",
+    "googleapis": "^150.0.1",
+    "mime-types": "^3.0.1"
+  }
+}
