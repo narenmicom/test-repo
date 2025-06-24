@@ -5,6 +5,7 @@ import * as fs from 'fs/promises'; // Use fs/promises for async file operations
 // Initialize Google Cloud Storage client
 // This will automatically use credentials from GOOGLE_APPLICATION_CREDENTIALS
 // environment variable or from the Google Cloud environment (e.g., Compute Engine)
+//asdasda
 const storage = new Storage({
     projectId: "ascendant-chain-417206",
     keyFilename: "./ascendant-chain-417206-8ed69bb283f0.json"
